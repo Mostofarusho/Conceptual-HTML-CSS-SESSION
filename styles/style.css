@@ -10,6 +10,7 @@
     height: 100vh;
     background-position: bottom center;
     background-size: cover;
+    clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 64% 66%, 65% 100%, 35% 100%, 34% 68%, 10% 50%);
 }
 
 .hero h1 {
@@ -28,13 +29,12 @@
     width: 80%;
     margin: 60px auto;
     background-color: rgb(126, 227, 227);
+    background: linear-gradient(45deg, pink, rgb(0, 255, 145));
     padding: 60px;
-    border-width: 15px;
-    border-color: yellow;
-    border-style: solid;
 }
 
-.article h2 {
+.article h2,
+#cow-type h2 {
     text-align: center;
     font-size: 48px;
     border-bottom: 5px yellow solid;
@@ -50,4 +50,18 @@
 .article p .imp {
     font-size: 2em;
     background-color: yellow;
+}
+
+.cow-images {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.cow-images div {
+    min-width: 300px;
+}
+
+.cow-images img {
+    width: 100%;
 }
